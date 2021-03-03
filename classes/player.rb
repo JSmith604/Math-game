@@ -1,18 +1,12 @@
 class Player
-    def initialize(name, lives)
+  #add a player id ?
+    def initialize(id, name, lives)
+      @id = id
       @name = name
       @lives = lives
     end
   end
 
-  class Player1 < Player
-    def initialize (name, lives)
-      super
-    end
-  end
-
-  class Player2 < Player
-    def initialize (name, lives)
-      super
-    end
-  end
+player1 = Player.new(1, "player1", 3)
+player = Player.new(2, "player2", 3)
+  
