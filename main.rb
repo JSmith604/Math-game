@@ -28,6 +28,9 @@ def question_calculator()
     end
   end
 
+      
+
+  
 
 
 
