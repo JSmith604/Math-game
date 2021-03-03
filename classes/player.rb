@@ -1,12 +1,16 @@
 class Player
-  #add a player id ?
+   attr_reader :lives
+   attr_reader :name
     def initialize(id, name, lives)
       @id = id
       @name = name
       @lives = lives
     end
+    def loseLife
+      lives -= 1
+      return lives
+    end
   end
 
-player1 = Player.new(1, "player1", 3)
-player = Player.new(2, "player2", 3)
+print Player.new(1, "player1", 3).lives
   
